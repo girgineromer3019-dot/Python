@@ -53,11 +53,11 @@ fruits = ["apple", "banana", "cherry"]
 fruits.append("orange")
 for fruit in fruits:
     print(fruit)    
-output:
-apple
-banana
-cherry
-orange
+output
+'apple'
+'banana'
+'cherry'
+'orange'
 
 ################# Add Sets Example###############
 thisset = {"apple", "banana", "cherry"}
@@ -85,14 +85,3 @@ set2 = {"google", "microsoft", "apple"}
 set3 = set1 & set2
 print(set3)
 output: {'apple'}
-
-############# my_module.py#################
-def greet(name):
-    return f"Hello, {name}!"
-
-pi = 3.14159
-
-
-class Calculator:
-    def add(self, a, b):
-        return a + b
