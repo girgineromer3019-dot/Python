@@ -48,6 +48,38 @@ newlist = [x for x in range(10) if x < 5]
 print(newlist)
 output: [0, 1, 2, 3, 4]
 
+#Add Itemes to List Example
+fruits = ["apple", "banana", "cherry"]
+fruits.append("orange")
+for fruit in fruits:
+    print(fruit)    
+output:
+apple
+banana
+cherry
+orange
+
+#Add Sets Example
+thisset = {"apple", "banana", "cherry"}
+tropical = {"pineapple", "mango", "papaya"}
+
+thisset.update(tropical)    
+print(thisset)
+output: {'banana', 'cherry', 'papaya', 'mango', 'apple', 'pineapple'}
+
+#Remove Item
+thisset = {"apple", "banana", "cherry"}
+thisset.remove("banana")
+print(thisset)
+output: {'cherry', 'apple'}
+
+#Intersection 
+set1 = {"apple", "banana", "cherry"}
+set2 = {"google", "microsoft", "apple"}
+set3 = set1.intersection(set2)
+print(set3)
+output: {'apple'}
+
 # my_module.py
 def greet(name):
     return f"Hello, {name}!"
