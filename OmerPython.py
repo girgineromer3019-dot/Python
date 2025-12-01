@@ -85,3 +85,19 @@ set2 = {"google", "microsoft", "apple"}
 set3 = set1 & set2
 print(set3)
 output: {'apple'}
+
+##############################################
+
+x = "pomcrsoamviordaovdaroiiow[qifomjvnjnsjncrepxrargomi"
+print(x.count("o"))
+
+##############################################
+
+day = 4
+match day:
+  case 1 | 2 | 3 | 4 | 5:
+    print("Today is a weekday")
+  case 6 | 7:
+    print("I love weekends!")
+
+    #############################################

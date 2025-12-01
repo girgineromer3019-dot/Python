@@ -1,3 +1,4 @@
+
 def greet(name):
     return f"Hello, {name}!"
 
@@ -68,8 +69,32 @@ class Calisan():
         print("Departman değiştirildi:", yeni_departman)
 
 class Yonetici(Calisan):
-    pass
+    pass 
 Yonetici1 = Yonetici("Ahmet","Yılmaz",8000,"Satış")
 Yonetici1.informatiecalisan()
 Yonetici1.departman_degistir("Pazarlama")
 Yonetici1.informatiecalisan()
+
+#---------------------------------------------#
+
+class car():
+    def __init__(self,model,price,year,color):
+        self.model = model
+        self.price = price
+        self.year = year 
+        self.color = color
+
+    def car_info(self):
+        print("""
+        Model:{}\
+        Price:{}
+        Year:{}
+        Color:{}""".format(self.model,self.price,self.year,self.color))
+        
+car1 = car("Toyota",30000,2020,"Red")
+car2 = car("Honda",28000,2019,"Blue")
+car3 = car("Ford",25000,2018,"Black")
+
+car1.car_info()
+car2.car_info()
+car3.car_info()
