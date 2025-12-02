@@ -98,3 +98,29 @@ car3 = car("Ford",25000,2018,"Black")
 car1.car_info()
 car2.car_info()
 car3.car_info()
+
+#---------------------------------------------#
+
+class Student():
+    def __init__(self,name,age,grade):
+        self.name = name
+        self.age = age
+        self.grade = grade
+
+    def student_info(self):
+        print("""
+        Name: {}
+        Age: {}
+        Grade: {}""".format(self.name,self.age,self.grade)
+        )
+
+    def grade_increase(self,amount):
+        self.grade += amount
+        print("New grade is:", self.grade)
+
+student1 = Student("Alice",20,85)
+student1.student_info()
+student1.grade_increase(5)
+student1.student_info()
+
+#---------------------------------------------#
