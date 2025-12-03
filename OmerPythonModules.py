@@ -124,3 +124,26 @@ student1.grade_increase(5)
 student1.student_info()
 
 #---------------------------------------------#
+
+class book():
+    def __init__(self,title,author,year,pages):
+        self.title = title
+        self.author = author
+        self.year = year
+        self.pages = pages
+    def book_info(self):
+        print("""
+        Title: {}
+        Author: {}
+        Year: {}
+        Pages: {}""".format(self.title, self.author, self.year, self.pages)
+        )
+
+book1 = book("1984","George Orwell",1949,328)
+book2 = book("To Kill a Mockingbird","Harper Lee",1960,281)
+book3 = book("The Great Gatsby","F. Scott Fitzgerald",1925,180)
+book1.book_info()
+book2.book_info()  
+book3.book_info()
+
+#---------------------------------------------#
