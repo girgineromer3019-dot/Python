@@ -53,16 +53,6 @@ class TvRemote():
         else:
             print(f"Het kanaal {kanaal_verwijderen} bestaat niet in de lijst.")
 
-    def kanaal_wisselen(self):
-        print("Beschikbare kanalen:")
-        for kanaal in self.kanaal_list:
-            print(kanaal)
-        nieuw_kanaal = input("Naar welk kanaal wil je wisselen?")
-        if nieuw_kanaal in self.kanaal_list:
-            print(f"Je bent nu overgeschakeld naar {nieuw_kanaal}.")
-        else:
-            print(f"Het kanaal {nieuw_kanaal} bestaat niet in de lijst.")
-    
     def __str__(self):
         return (f"Tv situatie: {self.Tv_situatie}\n"
                 f"Beschikbare kanalen: {', '.join(self.kanaal_list)}\n"
@@ -77,14 +67,13 @@ Welkom bij de Tv Remote
 3. Volume aanpassen
 4. Kanaal toevoegen
 5. Kanaal verwijderen
-6. Kanaal wisselen
-7. Toon Tv status
-8. Afsluiten  
+6. Toon Tv status
+7. Afsluiten  
 """)
 
 while True:
-    keuze = input("Maak een keuze (1-8):")
-    if (keuze == "8"):
+    keuze = input("Maak een keuze (1-7):")
+    if (keuze == "7"):
         print("Tv Remote wordt afgesloten.")
         break
     elif (keuze == "1"):
@@ -99,8 +88,6 @@ while True:
     elif (keuze == "5"):   
         remote.kanaal_verwijderen()
     elif (keuze == "6"):
-        remote.kanaal_wisselen()
-    elif (keuze == "7"):
         print(remote)
     else:
         print("Ongeldige keuze, probeer het opnieuw.")
