@@ -55,10 +55,12 @@ Yeni bir index eklemek icin:
         file.seek(0)     # Dosya imlecini baslangica goturur
         for i in liste:     # Dosyadaki mevcut satirlari tekrar yazar
             file.write(i)
-     
-"""
 
-open("TvRemote.py", "r")
+# Ornek:           
+   open("TvRemote.py", "r")
 file = open("TvRemote.py", "r")
 icerik = file.read()
-print(icerik)
+print(icerik) 
+ 
+"""
+
