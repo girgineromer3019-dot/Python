@@ -60,6 +60,3 @@ finally:
 
 #---------------------------------------------#
 
-
-a = int("kocpuasipu3289rw9inoasv")
-print(a)
