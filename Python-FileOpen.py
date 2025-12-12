@@ -60,7 +60,11 @@ Yeni bir index eklemek icin:
    open("TvRemote.py", "r")
 file = open("TvRemote.py", "r")
 icerik = file.read()
-print(icerik) 
+print(icerik)
  
 """
+
+with open("TryExcept.py", "r") as file:
+    icerik = file.read()
+    print(icerik)
 
