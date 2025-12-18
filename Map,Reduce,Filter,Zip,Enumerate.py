@@ -11,6 +11,13 @@ out = list(map(lambda x: x * 2, number))
 print(out)
 # [2, 4, 6, 8]
 
+def square(x):
+    return x ** 2
+numbers = [1, 2, 3, 4, 5]
+squared_numbers = list(map(square, numbers))
+print(squared_numbers)
+# [1, 4, 9, 16, 25]
+
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------------#
 
 #Reduce fonksiyonu, bir iterable'ın öğelerini tek bir değere indirgemek için kullanılır. Bu, genellikle toplama, çarpma gibi işlemler için kullanılır.
