@@ -60,6 +60,7 @@ finally:
 
 #---------------------------------------------#
 
+"""
 try:
     z = int(input("Geef een getal op:"))
     resultaat = 100 / z
@@ -69,4 +70,6 @@ except ValueError as ve:
 except ZeroDivisionError as zde:    
     print("Foutmelding:", zde)
 finally:
-    print("Einde van het programma.")   
+    print("Einde van het programma.") 
+"""
+  
