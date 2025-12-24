@@ -60,3 +60,13 @@ finally:
 
 #---------------------------------------------#
 
+try:
+    z = int(input("Geef een getal op:"))
+    resultaat = 100 / z
+    print("100 gedeeld door {} is {}".format(z, resultaat))
+except ValueError as ve:
+    print("Foutmelding:", ve)
+except ZeroDivisionError as zde:    
+    print("Foutmelding:", zde)
+finally:
+    print("Einde van het programma.")   
