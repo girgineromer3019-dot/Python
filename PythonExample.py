@@ -8,7 +8,7 @@ class file():
                 print(i)
 
 file = file()
-"""""""""""
+
 
 class file():
     def __init__(self):
@@ -18,3 +18,5 @@ class file():
             for i in words:
                 print(i)
 file = file()
+
+"""""""""""
