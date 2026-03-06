@@ -22,10 +22,10 @@ from bs4 import BeautifulSoup
 url = "https://www.goudengids.nl/nl/zoeken/ICT/Meppel/"
 response = requests.get(url)
 
-html_content = response.content
+print(response.status_code)
+print(response.text[:500])
 
-soup = BeautifulSoup(html_content, 'html.parser')
-
+soup = BeautifulSoup(response.content, 'html.parser')
 
 for i in soup.find_all("a"):
     print(i)
